@@ -1,3 +1,5 @@
+import numpy as np 
+
 class Activation_Function:
     def __init__(self, x):
         self.x = np.array(x)
