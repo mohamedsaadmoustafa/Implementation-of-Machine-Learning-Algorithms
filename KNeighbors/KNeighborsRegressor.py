@@ -16,7 +16,8 @@ class KNeighborsRegressor(KNeighbors):
         evaluate = RegresstionScore(test_target, predict_target)
         return evaluate(metric=self.metric)
     
-#"""
+"""
+import sklearn.datasets
 x, y = sklearn.datasets.load_diabetes(return_X_y=True, as_frame=False)
 x_train, x_test, y_train, y_test = train_test_split( x, y, test_size = 0.3, random_state = 42 )
 reg = KNeighborsRegressor(n_neighbors=20)
@@ -26,4 +27,4 @@ print(reg.score(x_test, y_test))
 n_neighbors = reg.best_k(2, x_test, y_test)
 print(reg.history)
 reg.plot_best_k()
- #""";
+ """;
