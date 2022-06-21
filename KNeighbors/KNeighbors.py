@@ -1,4 +1,5 @@
 import numpy as np
+from distanc import Distance
 
 class KNeighbors:
     def __init__(self, n_neighbors=5, metric='F1_Score', distance_metrix='euclidean', verbose=True):  
