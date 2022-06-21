@@ -16,7 +16,9 @@ class KNeighborsClassifier(KNeighbors):
         evaluate = ClassificationScore(test_target, predict_target)
         return evaluate(metric=self.metric)
     
-    
+
+"""
+import sklearn.datasets
 n_clusters = 5
 n_features = 10
 
@@ -38,3 +40,4 @@ y_pred = clf.predict(x_test)
 print(clf.score(x_test, y_test))
 #k = clf.best_k(25, x_test, y_test)
 #clf.plot_best_k()
+"""
