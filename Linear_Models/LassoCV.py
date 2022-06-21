@@ -1,6 +1,6 @@
 import numpy as np
 import Regression
-from Optimization import SGD
+from Optimization import SGD, Minibatch_Gradient_Decent
 
 class LassoCV(Regression):
     def __init__(
